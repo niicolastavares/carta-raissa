@@ -1,0 +1,753 @@
+<!doctype html>
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+
+    <meta name="theme-color" content="#f3ece1" />
+
+    <!-- Identidade visual da nova tela de entrada -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/favicon.png"
+    />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="apple-touch-icon" href="assets/favicon.png" />
+
+    <!-- Prévia ao compartilhar. Ao publicar, prefira informar a URL absoluta da imagem. -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Você, o Mar, o Reggae e Essa Paz que Não Sei Explicar"
+    />
+    <meta
+      property="og:description"
+      content="Algumas pessoas fazem o mundo desacelerar."
+    />
+    <meta property="og:image" content="assets/share-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Você, o Mar, o Reggae e Essa Paz que Não Sei Explicar"
+    />
+    <meta
+      name="twitter:description"
+      content="Algumas pessoas fazem o mundo desacelerar."
+    />
+    <meta name="twitter:image" content="assets/share-image.jpg" />
+
+    <meta
+      name="description"
+      content="Uma carta pessoal para Raissa, escrita com carinho, paz e boas energias."
+    />
+
+    <title>Você, o Mar, o Reggae e Essa Paz que Não Sei Explicar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.14.2/gsap.min.js"
+      defer
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.14.2/ScrollTrigger.min.js"
+      defer
+    ></script>
+
+    <script src="script.js" defer></script>
+    <script src="abertura.js" defer></script>
+    <script src="preloader.js" defer></script>
+  </head>
+
+  <body>
+    <!-- NOVA CAPA DE ENTRADA: leva à tela original do vinil, sem substituí-la -->
+    <section
+      class="preloader-entrada"
+      id="preloaderEntrada"
+      aria-labelledby="tituloPreloader"
+    >
+      <div class="preloader-entrada__conteudo">
+        <p class="preloader-entrada__etiqueta">UMA CARTA DIFERENTE</p>
+        <h1
+          class="preloader-entrada__titulo"
+          id="tituloPreloader"
+          aria-label="Você, o Mar, o Reggae e Essa Paz que Não Sei Explicar"
+        >
+          <span aria-hidden="true" class="preloader-entrada__palavra"
+            >Você,</span
+          >
+          <span aria-hidden="true" class="preloader-entrada__palavra"
+            >o Mar,</span
+          >
+          <span aria-hidden="true" class="preloader-entrada__palavra"
+            >o Reggae</span
+          >
+          <span aria-hidden="true" class="preloader-entrada__palavra"
+            >e Essa Paz</span
+          >
+          <span aria-hidden="true" class="preloader-entrada__palavra"
+            >que Não Sei</span
+          >
+          <span
+            aria-hidden="true"
+            class="preloader-entrada__palavra preloader-entrada__palavra--final"
+            >Explicar.</span
+          >
+        </h1>
+        <span class="preloader-entrada__linha" aria-hidden="true"></span>
+        <p class="preloader-entrada__frase">
+          Tem gente que é paz em forma de presença...
+        </p>
+        <button
+          class="preloader-entrada__botao"
+          id="entrarNaPagina"
+          type="button"
+        >
+          <span class="preloader-entrada__disco" aria-hidden="true">♫</span>
+          Descobrir o que preparei pra você
+          <span aria-hidden="true">↗</span>
+        </button>
+      </div>
+      <p class="preloader-entrada__nota" aria-hidden="true">
+        existe paz nas coisas que não precisam de pressa.
+      </p>
+    </section>
+
+    <!-- TELA INICIAL ORIGINAL: VINIL E MÚSICA (preservada) -->
+    <section
+      class="abertura-musical"
+      id="aberturaMusical"
+      aria-labelledby="tituloAbertura"
+    >
+      <div class="abertura-musical__conteudo">
+        <p class="abertura-musical__etiqueta">UMA EXPERIÊNCIA PARA SENTIR</p>
+        <div class="vinil" id="vinil" aria-hidden="true">
+          <div class="vinil__disco">
+            <div class="vinil__sulco vinil__sulco--externo"></div>
+            <div class="vinil__sulco vinil__sulco--interno"></div>
+            <div class="vinil__rotulo">
+              <span>para</span>
+              <span>Raissa</span>
+              <span class="vinil__coracao">♥</span>
+            </div>
+          </div>
+          <div class="vinil__brilho"></div>
+        </div>
+        <h1 class="abertura-musical__titulo" id="tituloAbertura">
+          O que vem a seguir não precisa de pressa. Só de você...
+        </h1>
+        <p class="abertura-musical__texto">
+          As coisas mais bonitas da vida são reveladas aos poucos, e tudo começa
+          quando a gente se permite sentir. Então aperte o play e sinta a vibe.
+        </p>
+        <div class="abertura-musical__ondas" aria-hidden="true">
+          <svg viewBox="0 0 280 42" fill="none">
+            <path
+              d="M2 21 H48 L58 13 L68 29 L79 7 L91 35 L103 15 L113 25 L124 18 H151 L162 9 L173 32 L184 15 L195 25 L205 18 H278"
+              stroke="currentColor"
+              stroke-width="1.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <button class="abertura-musical__botao" id="darPlay" type="button">
+          DÊ O PLAY NO SENTIR <span aria-hidden="true">↗</span>
+        </button>
+        <p class="abertura-musical__nota">um instante só seu...</p>
+      </div>
+    </section>
+
+    <main>
+      <!-- ABERTURA -->
+
+      <section class="hero" id="inicio">
+        <div class="hero__imagem" aria-hidden="true"></div>
+
+        <div class="hero__sombra" aria-hidden="true"></div>
+
+        <header class="hero__topo">
+          <span>UMA CARTA PESSOAL</span>
+
+          <span>FEITA COM CARINHO</span>
+        </header>
+
+        <div class="hero__conteudo">
+          <p class="hero__introducao manuscrito">Para alguém inefável...</p>
+
+          <h1>Raissa<span>,</span></h1>
+
+          <p class="hero__frase">
+            tem coisas que a gente precisa sentir antes mesmo de conseguir
+            explicar.
+          </p>
+
+          <button class="botao-abrir" id="abrirCarta" type="button">
+            <span>Deixe o coração tocar</span>
+
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 4v15m-6-6 6 6 6-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="hero__rodape">
+          <span>MAR</span>
+
+          <span class="hero__ponto">✳</span>
+
+          <span>PAZ</span>
+
+          <span class="hero__ponto">✳</span>
+
+          <span>BOAS ENERGIAS</span>
+        </div>
+      </section>
+
+      <!-- INTRODUÇÃO -->
+
+      <section class="introducao">
+        <p class="etiqueta reveal">UM POUCO DO QUE SINTO</p>
+
+        <p class="introducao__texto reveal">
+          Algumas coisas ficam mais bonitas quando a gente encontra as palavras
+          certas...
+        </p>
+
+        <div class="introducao__desenho reveal" aria-hidden="true">
+          <svg viewBox="0 0 120 38" fill="none">
+            <path
+              d="M2 20C17 7 28 32 43 20S69 8 83 20 105 30 118 17"
+              stroke="currentColor"
+              stroke-width="1.3"
+              stroke-linecap="round"
+            />
+
+            <path
+              d="M49 7C55 1 65 1 71 7C77 14 68 22 60 29C52 22 43 14 49 7Z"
+              stroke="currentColor"
+              stroke-width="1.2"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </section>
+
+      <!-- CARTA -->
+
+      <section class="carta" id="carta">
+        <div class="carta__papel">
+          <header class="carta__cabecalho reveal">
+            <div class="carta__selo" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none">
+                <path
+                  d="M32 5C35 20 44 29 59 32C44 35 35 44 32 59C29 44 20 35 5 32C20 29 29 20 32 5Z"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linejoin="round"
+                />
+
+                <path
+                  d="M32 19C34 26 38 30 45 32C38 34 34 38 32 45C30 38 26 34 19 32C26 30 30 26 32 19Z"
+                  stroke="currentColor"
+                  stroke-width="1"
+                />
+              </svg>
+            </div>
+
+            <p class="manuscrito">Uma mensagem para você</p>
+
+            <span class="carta__linha"></span>
+          </header>
+
+          <article class="carta__texto">
+            <p class="paragrafo reveal">
+              Difícil falar pouco quando o assunto é você, né!? Mas vou tentar!
+            </p>
+
+            <p class="paragrafo reveal">
+              Queria que você sentisse, através dessas flores, um pouquinho da
+              paz e da energia boa que você me transmite. E que soubesse, de uma
+              vez por todas, quem eu realmente sou e o que sinto quando se trata
+              de você...
+            </p>
+
+            <p class="paragrafo reveal">
+              Existe algo em ti que me traz uma sensação boa, daquelas que fazem
+              a gente querer desacelerar, aproveitar o presente e deixar a vida
+              acontecer, sem perder a beleza das pequenas coisas.
+            </p>
+
+            <p class="paragrafo reveal">
+              E, no meio disso tudo, fui percebendo que o que sinto por você vai
+              muito além de gostar da sua companhia. Quero te conhecer cada vez
+              mais, viajar com você para todos os lugares possíveis, te admirar
+              de perto e descobrir até onde esse sentimento pode nos levar...
+            </p>
+
+            <p class="paragrafo reveal">
+              Talvez seja isso o que eu mais queira: viver algo que me traga
+              tranquilidade, algo leve e cheio de amor. Porque você é como a paz
+              de um dia de praia, como a sensação de ouvir um reggae e sentir a
+              energia vibrar dentro da gente, daqueles que fazem a gente sentir
+              a alma leve e lembrar que a vida fica mais bonita quando a gente
+              encontra alguém com quem compartilhar essa energia...
+            </p>
+
+            <p class="paragrafo reveal">
+              E, no fim das contas, não tem por que o admirador ser secreto, né?
+              Afinal, eu te admiro em todos os aspectos e ocasiões, e você já
+              sabe quem é...
+            </p>
+
+            <p class="carta__frase-final reveal">
+              O que há dentro do meu coração,<br />eu tenho guardado pra te
+              dar...
+            </p>
+
+            <p class="carta__assinatura reveal">Ass: N.T <span>♥</span></p>
+          </article>
+
+          <footer class="carta__rodape reveal">
+            <svg viewBox="0 0 80 30" fill="none" aria-hidden="true">
+              <path
+                d="M2 15H24M56 15H78"
+                stroke="currentColor"
+                stroke-width="1"
+              />
+
+              <path
+                d="M40 5C31 10 31 19 40 25C49 19 49 10 40 5Z"
+                stroke="currentColor"
+                stroke-width="1.2"
+              />
+            </svg>
+
+            <span
+              >O dia não é necessariamente especial,<br />mas você é mais que
+              isso...</span
+            >
+          </footer>
+        </div>
+      </section>
+
+      <!-- MÚSICA E SENTIMENTOS -->
+
+      <section class="memorias" aria-labelledby="titulo-memorias">
+        <div
+          class="memorias__decoracao memorias__decoracao--esquerda"
+          aria-hidden="true"
+        >
+          <svg viewBox="0 0 120 140" fill="none">
+            <path
+              d="M15 130C38 100 53 67 57 8"
+              stroke="currentColor"
+              stroke-width="1.2"
+              stroke-linecap="round"
+            />
+
+            <path
+              d="M53 28C23 30 13 15 13 15C38 9 53 28 53 28Z"
+              stroke="currentColor"
+              stroke-width="1.2"
+            />
+
+            <path
+              d="M48 48C74 20 97 26 97 26C84 49 48 48 48 48Z"
+              stroke="currentColor"
+              stroke-width="1.2"
+            />
+
+            <path
+              d="M39 70C14 57 9 41 9 41C35 46 39 70 39 70Z"
+              stroke="currentColor"
+              stroke-width="1.2"
+            />
+
+            <path
+              d="M32 89C57 61 79 67 79 67C66 89 32 89 32 89Z"
+              stroke="currentColor"
+              stroke-width="1.2"
+            />
+          </svg>
+        </div>
+
+        <div
+          class="memorias__decoracao memorias__decoracao--direita"
+          aria-hidden="true"
+        >
+          <svg viewBox="0 0 120 140" fill="none">
+            <path
+              d="M7 95C27 80 45 83 58 95S89 109 113 88"
+              stroke="currentColor"
+              stroke-width="1.2"
+              stroke-linecap="round"
+            />
+
+            <path
+              d="M7 108C27 93 45 96 58 108S89 122 113 101"
+              stroke="currentColor"
+              stroke-width="1.2"
+              stroke-linecap="round"
+            />
+
+            <circle
+              cx="60"
+              cy="39"
+              r="17"
+              stroke="currentColor"
+              stroke-width="1.2"
+            />
+
+            <path
+              d="M60 10V2M60 76V68M31 39H23M97 39H89M39 18L33 12M81 60L87 66M81 18L87 12M39 60L33 66"
+              stroke="currentColor"
+              stroke-width="1.2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+
+        <header class="memorias__cabecalho reveal">
+          <p class="memorias__etiqueta">MÚSICA, MEMÓRIAS E SENTIMENTOS</p>
+
+          <h2 id="titulo-memorias">Tem coisas que viram trilha sonora.</h2>
+
+          <p class="memorias__descricao">
+            E tem sentimentos que encontram nas canções um jeito bonito de serem
+            ditos.
+          </p>
+
+          <span class="memorias__rabisco manuscrito">
+            algumas delas me lembram você...
+          </span>
+        </header>
+
+        <div class="musicas" aria-label="Três músicas e seus sentimentos">
+          <article
+            class="musica musica--direita"
+            data-musica="andanca"
+            aria-labelledby="musica-titulo-1"
+          >
+            <div class="musica__capa musica__capa--andanca">
+              <img
+                class="musica__imagem"
+                src="assets/capa-andanca.jpg"
+                alt="Capa do álbum Andança, de Beth Carvalho"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="musica__painel">
+              <div class="musica__conteudo">
+                <div class="musica__topo">
+                  <span class="musica__numero">01</span>
+                  <span class="musica__tema" aria-hidden="true">♡</span>
+                </div>
+                <p class="musica__introducao" id="musica-titulo-1">
+                  Uma caminhada a dois
+                </p>
+                <p class="musica__trecho">
+                  “Olha a Lua mansa a se derramar (me leva, amor), ao luar
+                  descansa, meu caminhar (amor), meu olhar em festa se fez feliz
+                  (me leva, amor), lembrando a seresta que um dia eu fiz (por
+                  onde for, quero ser seu par). Já me fiz a guerra por não saber
+                  (me leva, amor), que esta terra encerra meu bem-querer (amor),
+                  e jamais termina meu caminhar (me leva, amor), só o amor me
+                  ensina onde vou chegar [...]”
+                </p>
+                <footer class="musica__rodape">
+                  <span class="manuscrito">Uma canção para sentir</span>
+                  <span class="musica__credito">Andança · Beth Carvalho</span>
+                </footer>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="musica musica--esquerda"
+            data-musica="ela-une"
+            aria-labelledby="musica-titulo-2"
+          >
+            <div class="musica__capa musica__capa--ela-une">
+              <img
+                class="musica__imagem"
+                src="assets/capa-ela-une-todas-as-coisas.jpg"
+                alt="Capa do álbum Ela Une Todas as Coisas, de Jorge Vercillo"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="musica__painel">
+              <div class="musica__conteudo">
+                <div class="musica__topo">
+                  <span class="musica__numero">02</span>
+                  <span class="musica__tema" aria-hidden="true">✳</span>
+                </div>
+                <p class="musica__introducao" id="musica-titulo-2">
+                  A beleza de encontrar alguém
+                </p>
+                <p class="musica__trecho">
+                  “Ela une todas as coisas, como eu poderia explicar? Um doce
+                  mistério de rio, com a transparência de um mar... Ela une
+                  todas as coisas, quantos elementos vão lá? Sentimento fundo de
+                  água com toda a leveza do ar... Ela está em todas as coisas,
+                  até no vazio que me dá quando vejo a tarde cair e ela não está
+                  [...]”
+                </p>
+                <footer class="musica__rodape">
+                  <span class="manuscrito">Uma canção para guardar</span>
+                  <span class="musica__credito"
+                    >Ela Une Todas as Coisas · Jorge Vercillo</span
+                  >
+                </footer>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="musica musica--direita"
+            data-musica="blessings"
+            aria-labelledby="musica-titulo-3"
+          >
+            <div class="musica__capa musica__capa--blessings">
+              <img
+                class="musica__imagem"
+                src="assets/capa-blessings.jpg"
+                alt="Capa do álbum Blessings, de Etana"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="musica__painel">
+              <div class="musica__conteudo">
+                <div class="musica__topo">
+                  <span class="musica__numero">03</span>
+                  <span class="musica__tema" aria-hidden="true">☼</span>
+                </div>
+                <p class="musica__introducao" id="musica-titulo-3">
+                  Amar é uma bênção
+                </p>
+                <p class="musica__trecho">
+                  “And loving you is like making love for the very first time,
+                  My hearts racing and my blood is pumping and I, just can't get
+                  enough. Al, 'cause when a man love a woman and a woman love a
+                  man a Jah Jah blessing [...]”
+                </p>
+                <footer class="musica__rodape">
+                  <span class="manuscrito">Paz, Jah e amor</span>
+                  <span class="musica__credito">Blessings · Etana</span>
+                </footer>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="memorias__final manuscrito reveal">
+          Algumas melodias fazem a gente sentir que está no lugar certo.
+        </p>
+      </section>
+
+      <!-- ENCERRAMENTO: PRAIA TROPICAL -->
+
+      <section class="final" id="final">
+        <div class="final__imagem" aria-hidden="true"></div>
+
+        <div class="final__sombra" aria-hidden="true"></div>
+
+        <div class="final__conteudo">
+          <div class="final__desenho reveal" aria-hidden="true">
+            <svg viewBox="0 0 110 70" fill="none">
+              <!-- Sol -->
+
+              <circle
+                cx="78"
+                cy="24"
+                r="13"
+                stroke="currentColor"
+                stroke-width="1.2"
+              />
+
+              <!-- Palmeiras -->
+
+              <path
+                d="M29 65C32 48 34 30 30 14"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+
+              <path
+                d="M30 15C17 2 6 8 6 8C10 20 23 20 30 15Z"
+                stroke="currentColor"
+                stroke-width="1.2"
+              />
+
+              <path
+                d="M30 15C35 1 49 3 49 3C46 15 37 18 30 15Z"
+                stroke="currentColor"
+                stroke-width="1.2"
+              />
+
+              <path
+                d="M30 15C20 13 15 25 15 25C25 29 31 22 30 15Z"
+                stroke="currentColor"
+                stroke-width="1.2"
+              />
+
+              <path
+                d="M30 15C39 15 44 25 44 25C35 29 29 22 30 15Z"
+                stroke="currentColor"
+                stroke-width="1.2"
+              />
+
+              <!-- Mar -->
+
+              <path
+                d="M54 49C62 43 69 55 77 49S92 43 100 49"
+                stroke="currentColor"
+                stroke-width="1.2"
+                stroke-linecap="round"
+              />
+
+              <path
+                d="M52 59C60 53 67 65 75 59S90 53 98 59"
+                stroke="currentColor"
+                stroke-width="1.2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+
+          <p class="final__etiqueta reveal">E QUE A VIDA AINDA NOS LEVE A...</p>
+
+          <h2 class="final__frase reveal">
+            novos lugares,<br />
+
+            novas histórias,<br />
+
+            a mesma paz.
+          </h2>
+
+          <p class="final__subtitulo manuscrito reveal">
+            quem sabe, com os pés na areia e o coração leve.
+          </p>
+
+          <p class="mensagem-final">
+            E que a gente continue encontrando essa mesma tranquilidade nas
+            pequenas coisas e nos momentos que compartilhamos.
+          </p>
+
+          <span class="final__assinatura reveal" aria-hidden="true">
+            <svg viewBox="0 0 50 24" fill="none">
+              <path
+                d="M2 12H15M35 12H48"
+                stroke="currentColor"
+                stroke-width="1.1"
+              />
+
+              <path
+                d="M25 3C17 8 17 16 25 21C33 16 33 8 25 3Z"
+                stroke="currentColor"
+                stroke-width="1.2"
+              />
+            </svg>
+          </span>
+        </div>
+      </section>
+    </main>
+
+    <!-- TRILHA SONORA PERSISTENTE -->
+    <audio
+      id="trilhaSonora"
+      src="assets/andança-beth-carvalho.mpeg"
+      preload="auto"
+      loop
+    ></audio>
+
+    <!-- CONTROLE DISCRETO DA MÚSICA -->
+    <div class="audio-ferramentas" aria-label="Controles de áudio">
+      <div class="controle-volume-wrap">
+        <button
+          class="botao-volume"
+          id="botaoVolume"
+          type="button"
+          aria-label="Abrir controle de volume"
+          aria-expanded="false"
+          aria-controls="controleVolume"
+        >
+          <svg
+            class="botao-volume__icone"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M4 10v4h4l5 4V6l-5 4H4Z"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M16 9.2a4 4 0 0 1 0 5.6M18.5 6.8a7.5 7.5 0 0 1 0 10.4"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+        <div class="controle-volume" id="controleVolume" hidden>
+          <label for="volumeMusica">VOLUME</label>
+          <input
+            type="range"
+            id="volumeMusica"
+            min="0"
+            max="100"
+            value="70"
+            step="1"
+            aria-label="Controlar volume da música"
+            aria-orientation="vertical"
+          />
+          <span id="valorVolume">70%</span>
+        </div>
+      </div>
+      <button
+        class="controle-musica"
+        id="controleMusica"
+        type="button"
+        aria-label="Pausar música"
+        aria-pressed="false"
+        hidden
+      >
+        <span class="controle-musica__icone" aria-hidden="true">▶</span>
+        <span class="controle-musica__texto">Continuar música</span>
+      </button>
+    </div>
+  </body>
+</html>
