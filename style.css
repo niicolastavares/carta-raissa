@@ -109,7 +109,7 @@ svg {
 }
 
 .hero__imagem {
-  background-image: url("assets/hero-entardecer-vinil.png"); /* PROMPT: hero-entardecer-vinil.txt */
+  background-image: url("assets/hero-entardecer-vinil.webp"); /* PROMPT: hero-entardecer-vinil.txt */
 
   background-size: cover;
 
@@ -1734,7 +1734,7 @@ canvas {
    DIREÇÃO DE ARTE — VINIL AO PÔR DO SOL
    Paleta e superfícies alinhadas à imagem da abertura.
    Imagens futuras (opcionais até serem geradas):
-   assets/hero-entardecer-vinil.png e assets/final-mar-dourado.png
+   assets/hero-entardecer-vinil.webp e assets/final-mar-dourado.png
    ============================================================ */
 :root {
   --areia: #ead8bd;
@@ -1769,7 +1769,7 @@ body {
   background-color: #8f4d2c;
   background-image:
     linear-gradient(180deg, rgba(38, 23, 17, 0.12), rgba(38, 23, 17, 0.2)),
-    url("assets/hero-entardecer-vinil.png"); /* espaço reservado para a imagem gerada */
+    url("assets/hero-entardecer-vinil.webp"); /* espaço reservado para a imagem gerada */
   background-position: center;
 }
 .hero__sombra {
