@@ -935,7 +935,7 @@ body.abertura-scroll-lock {
       rgba(35, 27, 23, 0.24) 44%,
       rgba(20, 24, 20, 0.5) 100%
     ),
-    url("por-do-sol-disco-vinil.png");
+    url("por-do-sol-disco-vinil.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1648,7 +1648,7 @@ canvas {
       rgba(55, 34, 25, 0.25) 42%,
       rgba(24, 24, 19, 0.58) 100%
     ),
-    url("por-do-sol-disco-vinil.png");
+    url("por-do-sol-disco-vinil.webp");
 }
 
 .abertura-musical__etiqueta {
@@ -2002,7 +2002,7 @@ body {
       rgba(55, 34, 25, 0.18) 42%,
       rgba(24, 17, 13, 0.66) 100%
     ),
-    url("por-do-sol-disco-vinil.png");
+    url("por-do-sol-disco-vinil.webp");
 }
 .abertura-musical__titulo {
   color: #fff3e2;
